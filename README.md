@@ -11,7 +11,7 @@
     ```bash
     sudo adduser [username]
     sudo gpasswd -a [username] sudo
-    sudo systemctl restart docker
+    sudo gpasswd -a $USER docker
     sudo reboot
     ```
 
