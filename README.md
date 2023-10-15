@@ -6,11 +6,12 @@
     ./setup.sh
     ```
 
-2. Add a user for remote desktop and restart
+2. Add a user for remote desktop, docker and restart
 
     ```bash
     sudo adduser [username]
     sudo gpasswd -a [username] sudo
+    sudo systemctl restart docker
     sudo reboot
     ```
 
