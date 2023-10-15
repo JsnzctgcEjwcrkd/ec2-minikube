@@ -59,7 +59,7 @@ echo sudo gpasswd -a [username] sudo
 echo sudo reboot
 
 echo ## minikube start
-echo minikube start --vm-driver=none
+echo minikube start
 echo minikube addons enable ingress
 echo ---------------------------------------------------
 echo done.
