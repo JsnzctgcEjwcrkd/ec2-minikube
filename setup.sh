@@ -15,8 +15,8 @@ current_sshd_config="/etc/ssh/sshd_config"
 backup_sshd_config="$current_sshd_config.backup"
 sudo cp "$current_sshd_config" "$backup_sshd_config"
 sudo cp "$new_sshd_config" "$current_sshd_config"
-# mv /root/.ssh/authorized_keys /root/.ssh/authorized_keys_bak
-# cp -f /home/ubuntu/.ssh/authorized_keys /root/.ssh/authorized_keys
+sudo mv /root/.ssh/authorized_keys /root/.ssh/authorized_keys_bak
+sudo cp -f /home/ubuntu/.ssh/authorized_keys /root/.ssh/authorized_keys
 sudo service sshd reload
 
 ## minikube
