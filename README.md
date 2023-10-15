@@ -17,7 +17,7 @@
 3. Run minikube start as root user
 
     ```bash
-    minikube start --vm-driver=none
+    minikube start
     minikube addons enable ingress
     ```
 
