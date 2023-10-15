@@ -57,7 +57,7 @@ echo ## add rdp user
 echo sudo adduser [username]
 echo sudo gpasswd -a [username] sudo
 echo ## add USER docker group
-echo sudo gpasswd -a $USER docker
+echo sudo gpasswd -a [username] docker
 echo sudo reboot
 
 echo ## minikube start
